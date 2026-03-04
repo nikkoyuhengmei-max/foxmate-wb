@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    unoptimized: true,
-  },
-}
+const repo = "foxmate-website"; // ← 改成你的仓库名
 
-module.exports = nextConfig
 const nextConfig = {
-  output: 'export',
+  output: "export",
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+  trailingSlash: true,
+  images: { unoptimized: true },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
