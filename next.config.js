@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const repo = "foxmate-website"; // ← 改成你的仓库名
+const repo = "foxmate-wb"; // ← 改成你的仓库名
 
 const nextConfig = {
   output: "export",
